@@ -3,20 +3,31 @@ package arithmeticCalculator;
 import java.util.Scanner;
 
 public class Calculator {
-
+    
+	/**
+	 * This method will add 2 numbers
+	 */
 	public static void add(int a, int b) {
 
 		System.out.println(a + b);
 	}
-
+	/**
+	 * This method will subtract 2 numbers
+	 */
 	public static void subtract(int a, int b) {
 
 	}
-
+	
+	/**
+	 * This method will Multiply 2 numbers
+	 */
 	public static void multiply(int a, int b) {
 		System.out.println(a * b);
 	}
-
+    
+	/**
+	 * This method will Divide 2 numbers
+	 */
 	public static void divide(int a, int b) {
 		System.out.println(a / b);
 	}
@@ -66,9 +77,10 @@ public class Calculator {
 				}
 			} catch (Exception ex) {
 				System.out.println("Some Error Ocuurred");
+				ex.printStackTrace();
+				System.exit(0);
 			}
 
 		}
 	}
-
 }
